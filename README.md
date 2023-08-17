@@ -53,12 +53,12 @@ Você pode fazer isso executando:
 
 
 ## Explicações Gerais
-Após explicar a parte de instalação do módulo, vou estar colocando aqui meus pontos sobre o modulo e como foi a experiência de desenvolver.
+Após explicar a parte de instalação do módulo, vou estar colocando aqui meus pontos sobre o módulo e como foi a experiência de desenvolver.
 
 Comecei criando os arquivos basicos do módulo como `registration.php, module.xml`.
 Depois criei o arquivo de **template** e o **block** para ser chamado no `default.xml`.
 
-Feito isso fiz a configuração da loja dentro do administrativo, onde criei as store_views, coloquei os parametros de linguagem, região, etc. Tudo para simular o máximo possível o ambiente da tarefa.
+Feito isso fiz a configuração da loja dentro do administrativo, onde criei as store_views, coloquei os parâmetros de linguagem, região, etc. Tudo para simular o máximo possível o ambiente da tarefa.
 Criei a página CMS -> about-us e comecei a realizar os testes.
 
 Então fui indo por partes conforme o desafio solicita:
@@ -78,7 +78,8 @@ Dentro do meu block criei duas funções, sendo elas getStoreCode() e a getCurre
 
 `3. Nesse caso, deve adicionar uma Meta Tag hreflang ao head para cada
 store-view que a página esteja ativa`
-Com isso em mente, criei no arquivo de template o for para gerar um `<link hreflang>` para cada storeView detectado na página. 
+Com isso em mente, criei no arquivo de template o `for` para gerar um `<link hreflang>` para cada storeView detectado na página. 
+
 **Observação**: Imagino que o melhor cenário seria ter criado um foreach para exibir dessa forma, mas logo vou explicar o porque foi necessário fazer dessa forma.
 
 ![image](https://github.com/ElNogara/Hibrido_MetaTag_MultiSite/assets/50090354/284a7122-c6a6-4011-8a2d-d3e7404abf31)
@@ -94,7 +95,8 @@ Para realizar essa funcionalidade, aproveitei as configurações do code dos sto
 Com os passos feitos, comecei a validar as outras informações do desafio, como a estrutura da tag e o resultado final esperado.
 No momento de configurar as storeviews conforme o desafio me solicitou:
 
-```Existem três store-views configuradas na instalação Magento, uma para o Brasil,
+```
+Existem três store-views configuradas na instalação Magento, uma para o Brasil,
 outra para os EUA e outra para a Inglaterra, o idioma do Brasil está definido como
 pt-br, o dos EUA está definido como en-us e o da Inglaterra como en-gb, todos
 configurados como o idioma padrão da store-view.
@@ -103,14 +105,15 @@ e a configuração de adicionar o código das store-views na URL está habilitad
 exemplos abaixo:
 ● Brasil: https://www.hibrido.com.br/pt-br/
 ● EUA: https://www.hibrido.com.br/en-us/
-● Inglaterra: https://www.hibrido.com.br/en-gb/```
+● Inglaterra: https://www.hibrido.com.br/en-gb/
+```
 
 Tive um pequeno problema... O Magento 2 não aceita `-` no code dos seus storeviews, e o desafio foi feito baseado nisso. **G.G**
 
 ![image](https://github.com/ElNogara/Hibrido_MetaTag_MultiSite/assets/50090354/ecaa3a3a-ac4f-4cde-89bf-85996f8c08bf)
 
 
-Mas para não parar por ae, eu cadastrei elas com o `_` que é aceito pela plataforma e adicionei o code dos storeview em suas urls, no caso a minha url basica da loja de teste é `http://nogaromerce.com.br/`, fazendo com que ficassem:
+Mas para não parar por ae, cadastrei elas com o `_` que é aceito pela plataforma e adicionei o code dos storeview em suas urls, no caso a minha url basica da loja de teste é `http://nogaromerce.com.br/`, fazendo com que ficassem:
 
 ```
 http://nogaromerce.com.br/pt_br/
