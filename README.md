@@ -130,9 +130,9 @@ E na hora de exibir na metatag, fiz a conversão utilizando o implode e o explod
 E como eu estava utilizando o $block->getBaseUrl() nativo do Magento 2, ele estava me retornando todos os links dessa forma:
 
 ```
-<link rel="alternate" hreflang="**pt-br**" href="http://nogaramagento.com.br/**pt_br**/about-us">
-<link rel="alternate" hreflang="**en-gb**" href="http://nogaramagento.com.br/**pt_br**/about-us">
-<link rel="alternate" hreflang="**en-gb**" href="http://nogaramagento.com.br/**pt_br**/about-us">
+<link rel="alternate" hreflang="pt-br" href="http://nogaramagento.com.br/**pt_br**/about-us">
+<link rel="alternate" hreflang="en-gb" href="http://nogaramagento.com.br/**pt_br**/about-us">
+<link rel="alternate" hreflang="en-gb" href="http://nogaramagento.com.br/**pt_br**/about-us">
 ```
 
 Onde o href sempre estava pegando a página atual, por isso houve a necessidade de eu criar a função $block->getStoreViewBaseUrl(), que pega todos os stores views e me retorna as suas urls basicas:
