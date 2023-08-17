@@ -153,10 +153,11 @@ E foi por esse mótivo que utilizei o for ao invés do foreach, dessa forma cons
 
 Fazendo com que o resultado final fosse conforme o esperado:
 
-![image](https://github.com/ElNogara/Hibrido_MetaTag_MultiSite/assets/50090354/174b71b8-de89-430e-b195-a1a484994016)
+![image](https://github.com/ElNogara/Hibrido_MetaTag_MultiSite/assets/50090354/327b1a2d-1d69-4880-8915-041ccdeb884b)
 
 
-Sendo que o code do storeview só não está com o `-` pois não é aceitado pelo Magento 2 dessa forma.
+
+Sendo que o code do storeview só não está com o `-` pois não é aceito pelo Magento 2 dessa forma.
 E o código também está otimizado para receber infinitas linguagens e paises, tomei a liberdade de realizar alguns testes com mais storeviews:
 
 ![image](https://github.com/ElNogara/Hibrido_MetaTag_MultiSite/assets/50090354/9ed2bd87-6237-4269-86bb-03cdd9c0dff0)
