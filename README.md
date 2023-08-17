@@ -6,6 +6,7 @@
 - [Personalizar o Bloco](#personalizar-o-bloco)
 - [Limpar o Cache](#limpar-o-cache)
 - [Explicações Gerais](#explicações-gerais)
+- [Considerações](#considerações)
 
 ## Instalação
 
