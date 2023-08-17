@@ -176,15 +176,9 @@ E para finalizar, criei algumas validações no código para caso o cliente aces
 
 
 
+## Considerações
 
-
-
-
-
-
-
-
-
-
+Adorei a experiência, aprendi bastante e espero ter seguido tudo como deveria, caso tiverem algum posicionamento para me passar sobre o código ou alterações, adoraria ouvir um feedback da equipe!
+Um abraço para vocês.
 
 
