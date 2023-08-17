@@ -5,6 +5,7 @@
 - [Adicionar o Bloco ao head](#adicionar-o-bloco-ao-head)
 - [Personalizar o Bloco](#personalizar-o-bloco)
 - [Limpar o Cache](#limpar-o-cache)
+- [Explicações Gerais](#explicacoes-gerais)
 
 ## Instalação
 
