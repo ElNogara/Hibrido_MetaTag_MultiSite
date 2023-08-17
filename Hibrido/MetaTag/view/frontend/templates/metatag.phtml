@@ -1,0 +1,15 @@
+<?php
+    $storeViews = $block->getStoreCode();
+?>
+<?php if ($storeViews): ?>
+    <?php 
+        $storeLanguages = implode(' ', $storeViews);
+        $storeLanguages = explode(' ', str_replace('_', '-', $storeLanguages));
+        $baseUrls = $block->getStoreViewBaseUrl($storeViews);
+        $cmsPageUrl = $block->getCmsPageUrl();
+    ?>
+    <!-- Created to display both the storeView correctly and the UrlBase -->
+    <?php for ($i = 0; $i < count($storeViews); $i++): ?>
+        <link rel="alternate" hreflang="<?= $storeLanguages[$i] ?>" href="<?= $baseUrls[$i] . $cmsPageUrl ?>">
+    <?php endfor ?>
+<?php endif ?>
