@@ -1,5 +1,5 @@
 # Hibrido_MetaTag_MultiSite
-Modulo tem como objetivo exibir o hreflang de acordo com as configurações de storeview das páginas.
+Módulo tem como objetivo exibir o hreflang de acordo com as configurações de storeview das páginas.
 <h3>Desafio Hibrido - Teste #1 - Meta Tag em Multi-site</h3>
 
 - [Instalação](#instalação)
